@@ -1,0 +1,36 @@
+# Ignore everything
+*
+
+!.gitignore
+!.cursor/
+!.cursor/commands/
+!.cursor/commands/venv.md
+!.gitconfig
+!.hooks/
+!.hooks/**
+!README.md
+!repo.config.json
+!workflow.yaml
+!workflows/
+!workflows/**
+!requirements.txt
+!image-formats.txt
+!bin/
+!bin/**
+bin/.venv/
+
+!git-template
+!git-template/**
+
+!data/
+!data/domains.txt.example
+
+# Icons and source images (webp/ and namespaced subdirs: webp/aws/, webp/macos/, etc.)
+!webp/
+!webp/**/*.webp
+# block non-webp files inside webp/ (e.g. stray scripts)
+webp/**
+!webp/**/
+!webp/**/*.webp
+# logo clip-queue empty sidecars (not WebP assets)
+webp/**/*.webp.CLIPPED
